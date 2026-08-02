@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="decoracion"></div>
+        <h1>Restaurant</h1>
+        <p class="subtitulo">Tu pedido se prepara paso a paso</p>
+        <button id="enviarPedido">Enviar pedido</button>
+        <div id="resultadoPedido" class="resultado" aria-live="polite">Esperando resultado...</div>
+        <p id="parrafoEstatus" class="estatus" aria-live="polite">Presiona el botón para iniciar el pedido.</p>
+
+        <section class="estado">
+            <p class="estado-item">Pizza 🍕: <span id="estatusPizza" class="valor">Esperando...</span></p>
+            <p class="estado-item">Bebida 🍹: <span id="estatusBebida" class="valor">Esperando...</span></p>
+            <p class="estado-item">Postre 🍨: <span id="estatusPostre" class="valor">Esperando...</span></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
