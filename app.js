@@ -6,7 +6,7 @@ const bebida = document.querySelector('#estatusBebida');
 const postre = document.querySelector('#estatusPostre');
 
 const estatusDelPedido = () => {
-    return Math.random() < 0.5;
+    return Math.random() < 0.8;
 };
 
 const actualizarEstado = (elemento, mensaje) => {
