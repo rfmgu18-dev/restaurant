@@ -6,7 +6,7 @@ const bebida = document.querySelector('#estatusBebida');
 const postre = document.querySelector('#estatusPostre');
 
 const estatusDelPedido = () => {
-    return Math.random() < 0.8;
+    return Math.random() < 0.5;
 };
 
 const actualizarEstado = (elemento, mensaje) => {
@@ -21,7 +21,7 @@ const prepararItem = (elemento, mensaje, tiempo) => {
         }, tiempo);
     });
 };
-
+//Preparación con éxito
 const preparacionPedido = async () => {
     try {
         await prepararItem(pizza, 'Pizza lista', 3000);
@@ -53,7 +53,8 @@ btnEnviarPedido.addEventListener('click', () => {
         actualizarEstado(resultadoPedido, 'Pedido rechazado...');
         resultadoPedido.className = 'resultado resultado--error';
         actualizarEstado(estatusPedido, 'Ocurrió un error al preparar tu pedido. Porfavor, intente nuevamente ❌.');
-
+        btnEnviarPedido.disabled = false;
+        btnEnviarPedido.textContent = 'Volver a enviar pedido';
         return;
     }
 
