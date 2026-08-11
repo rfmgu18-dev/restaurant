@@ -11,5 +11,4 @@ Este proyecto posee:
 | HTML   | Estructura semántica del código |
 | CSS   | Estilos, márgenes y diseño del código |
 | JS   | Lógica y funcionamiento del código |
-|:---:|:---:|
 
